@@ -7,6 +7,11 @@
         <item name="android:textSize">30sp</item>
     </style>
 
-    <string name="menu1">Notifikasi</string>
+    <string name="menu1">Notification</string>
     <string name="menu2">Username</string>
+    <string name="menu3"></string>
+    <string name="menu4"></string>
+    <string name="menu5"></string>
+    <string name="menu6"></string>
+    <string name="menu7"></string>
 </resources>

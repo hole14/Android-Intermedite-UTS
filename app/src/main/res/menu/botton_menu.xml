@@ -2,6 +2,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/"
+        android:id="@+id/nav_home"
+        android:icon="@drawable/select_home"
+        android:title="@string/menu3"/>
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/select_search"
+        android:title="@string/menu4"/>
+
+    <item
+        android:id="@+id/nav_unggah"
+        android:icon="@drawable/select_plus"
+        android:title="@string/menu5"/>
+
+    <item
+        android:id="@+id/nav_reels"
+        android:icon="@drawable/select_reels"
+        android:title="@string/menu6"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="@string/menu7"/>
 
 </menu>
