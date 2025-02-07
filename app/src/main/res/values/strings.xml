@@ -4,7 +4,7 @@
         <item name="fontFamily">@font/allura_regular</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:textSize">37sp</item>
+        <item name="android:textSize">30sp</item>
     </style>
 
     <string name="menu1">Notifikasi</string>
