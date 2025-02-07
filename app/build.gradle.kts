@@ -9,8 +9,8 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myprojectuts"
-        minSdk = 24
-        targetSdk = 34
+        minSdk = 29
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -44,13 +44,13 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
 
     //implementation tambahan
-    implementation(libs.androidx.navigation.ui)
+    /*implementation(libs.androidx.navigation.ui)
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.viewpager2)
     implementation(libs.hdodenhof.circleimageview)
     implementation(libs.github.glide)
-    implementation(libs.androidx.navigation.safe.args.gradle.plugin)
+    implementation(libs.androidx.navigation.safe.args.gradle.plugin)*/
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
