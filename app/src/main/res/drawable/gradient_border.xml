@@ -12,12 +12,13 @@
     </item>
 
     <item
-        android:left="8dp"
-        android:right="8dp"
-        android:top="8dp"
-        android:bottom="8dp">
+        android:left="4dp"
+        android:right="4dp"
+        android:top="4dp"
+        android:bottom="4dp">
         <shape android:shape="oval">
-            <solid android:color="@android:color/white" /> <!-- Warna dalam -->
+            <solid android:color="@android:color/white" />
+            <corners android:radius="8dp"/>
         </shape>
     </item>
 </layer-list>

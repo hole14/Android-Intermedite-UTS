@@ -6,12 +6,20 @@
     android:layout_height="100dp"
     android:layout_gravity="center">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/circleImageView"
+    <ImageView
+        android:id="@+id/image"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:background="@drawable/select_border"
-        android:scaleType="centerCrop"
+        android:src="@drawable/select_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="3dp"
         android:src="@drawable/sg_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
