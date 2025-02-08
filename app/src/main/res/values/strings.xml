@@ -14,4 +14,31 @@
     <string name="menu5"></string>
     <string name="menu6"></string>
     <string name="menu7"></string>
+
+    <string-array name="data_photo">
+        <item>@drawable/sg_1</item>
+        <item>@drawable/sg_2</item>
+        <item>@drawable/sg_3</item>
+        <item>@drawable/sg_4</item>
+        <item>@drawable/sg_5</item>
+        <item>@drawable/sg_6</item>
+        <item>@drawable/sg_7</item>
+        <item>@drawable/sg_8</item>
+        <item>@drawable/sg_9</item>
+        <item>@drawable/sg_10</item>
+    </string-array>
+
+    <string-array name="data_username">
+        <item>username1</item>
+        <item>username2</item>
+        <item>username3</item>
+        <item>username4</item>
+        <item>username5</item>
+        <item>username6</item>
+        <item>username7</item>
+        <item>username8</item>
+        <item>username9</item>
+        <item>username10</item>
+    </string-array>
+
 </resources>
