@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Lingkaran dengan Gradient (Border) -->
     <item>
         <shape android:shape="oval">
             <gradient
@@ -12,12 +11,11 @@
         </shape>
     </item>
 
-    <!-- Lingkaran Dalam (Isi dengan Border Solid atau Transparan) -->
     <item
-        android:left="4dp"
-        android:right="4dp"
-        android:top="4dp"
-        android:bottom="4dp">
+        android:left="8dp"
+        android:right="8dp"
+        android:top="8dp"
+        android:bottom="8dp">
         <shape android:shape="oval">
             <solid android:color="@android:color/white" /> <!-- Warna dalam -->
         </shape>

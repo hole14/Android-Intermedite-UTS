@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -45,13 +46,14 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.hdodenhof.circleimageview)
 
     //implementation tambahan
     /*implementation(libs.androidx.navigation.ui)
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.viewpager2)
-    implementation(libs.hdodenhof.circleimageview)
+
     implementation(libs.github.glide)
     implementation(libs.androidx.navigation.safe.args.gradle.plugin)*/
 

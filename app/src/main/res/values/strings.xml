@@ -15,6 +15,8 @@
     <string name="menu6"></string>
     <string name="menu7"></string>
 
+    <string name="judul">Judul</string>
+
     <string-array name="data_photo">
         <item>@drawable/sg_1</item>
         <item>@drawable/sg_2</item>
