@@ -25,8 +25,8 @@ class AdapterClass(private val listAja: ArrayList<tampil>): RecyclerView.Adapter
     }
 
     companion object{
-        private const val EXTRA_JUDUL = "extra_judul"
-        private const val EXTRA_PHOTO = "extra_photo"
+        const val EXTRA_JUDUL = "extra_judul"
+        const val EXTRA_PHOTO = "extra_photo"
     }
 
     class listViewHolder(lihatItem: View): RecyclerView.ViewHolder(lihatItem) {
