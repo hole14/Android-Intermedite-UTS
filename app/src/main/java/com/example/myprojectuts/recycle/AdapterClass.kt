@@ -2,7 +2,6 @@ package com.example.myprojectuts.recycle
 
 import android.content.Intent
 import android.os.Parcelable
-import android.provider.Telephony.Mms.Intents
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,15 +12,15 @@ import com.example.myprojectuts.deskripsi.DeskripsiStatus
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.parcelize.Parcelize
 
-class AdapterClass(private val listAja: ArrayList<tampil>): RecyclerView.Adapter<AdapterClass.listViewHolder>() {
-    private lateinit var pencet: onItemClickCallback
+class AdapterClass(private val listAja: ArrayList<tampilan>): RecyclerView.Adapter<AdapterClass.listViewHolder>() {
+    private var click: onItemClickCallback? = null
 
     interface onItemClickCallback{
-        fun clickItem(data: tampil)
+        fun clickItem(data: tampilan)
     }
 
     fun set(clickItem: onItemClickCallback){
-        this.pencet = clickItem
+        this.click = clickItem
     }
 
     companion object{
@@ -45,7 +44,7 @@ class AdapterClass(private val listAja: ArrayList<tampil>): RecyclerView.Adapter
         holder.photo.setImageResource(photo)
 
         holder.itemView.setOnClickListener{
-            pencet.clickItem(listAja[holder.adapterPosition])
+            click?.clickItem(listAja[holder.adapterPosition])
             val intent = Intent(holder.itemView.context, DeskripsiStatus::class.java)
             intent.putExtra(EXTRA_JUDUL, judul)
             intent.putExtra(EXTRA_PHOTO, photo)
@@ -57,7 +56,7 @@ class AdapterClass(private val listAja: ArrayList<tampil>): RecyclerView.Adapter
 
 }
 @Parcelize
-data class tampil(
+data class tampilan(
     val judul: String,
     val photo: Int
 ):Parcelable

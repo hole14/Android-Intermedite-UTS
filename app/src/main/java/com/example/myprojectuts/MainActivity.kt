@@ -10,11 +10,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myprojectuts.databinding.ActivityMainBinding
 import com.example.myprojectuts.recycle.AdapterClass
-import com.example.myprojectuts.recycle.tampil
+import com.example.myprojectuts.recycle.tampilan
 
 class MainActivity : AppCompatActivity() {
     private lateinit var tampil: RecyclerView
-    private val list = ArrayList<tampil>()
+    private val list = ArrayList<tampilan>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,12 +26,12 @@ class MainActivity : AppCompatActivity() {
         daftarTampilan()
     }
 
-    private fun listTampilan(): ArrayList<tampil> {
+    private fun listTampilan(): ArrayList<tampilan> {
         val dataJudul = resources.getStringArray(R.array.data_username)
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
-        val listTampil = ArrayList<tampil>()
+        val listTampil = ArrayList<tampilan>()
         for(i in dataJudul.indices){
-            val tampil = tampil(dataJudul[i], dataPhoto.getResourceId(i, -1))
+            val tampil = tampilan(dataJudul[i], dataPhoto.getResourceId(i, -1))
             listTampil.add(tampil)
         }
         return listTampil
