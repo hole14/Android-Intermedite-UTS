@@ -58,5 +58,5 @@ class AdapterClass(private val listAja: ArrayList<tampilan>): RecyclerView.Adapt
 @Parcelize
 data class tampilan(
     val judul: String,
-    val photo: Int
+    val photo: Int,
 ):Parcelable

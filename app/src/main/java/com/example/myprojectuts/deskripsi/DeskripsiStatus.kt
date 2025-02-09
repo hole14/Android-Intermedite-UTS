@@ -1,5 +1,6 @@
 package com.example.myprojectuts.deskripsi
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageView
@@ -13,8 +14,6 @@ import com.example.myprojectuts.recycle.AdapterClass
 import de.hdodenhof.circleimageview.CircleImageView
 
 class DeskripsiStatus : AppCompatActivity() {
-    private lateinit var share: ImageView
-    private lateinit var pesan: EditText
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.deskripsi_status)
@@ -29,5 +28,22 @@ class DeskripsiStatus : AppCompatActivity() {
         user.text = judul
         profile.setImageResource(photo)
         status.setImageResource(photo)
+
+        val share: ImageView = findViewById(R.id.share)
+
+        share.setOnClickListener{
+            val bagikan = Intent(Intent.ACTION_SEND)
+            bagikan.putExtra(Intent.EXTRA_TEXT, "Saya sedang melihat $judul")
+            bagikan.type = "text/plain"
+            startActivity(Intent.createChooser(bagikan, "Bagikan"))
+        }
+
+        val like: ImageView = findViewById(R.id.like)
+        var ini = false
+
+        like.setOnClickListener{
+            ini = !ini
+            like.isSelected = ini
+        }
     }
 }
