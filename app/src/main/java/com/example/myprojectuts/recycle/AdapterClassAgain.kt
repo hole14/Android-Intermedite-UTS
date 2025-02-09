@@ -1,5 +1,7 @@
 package com.example.myprojectuts.recycle
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,10 +36,10 @@ class AdapterClassAgain(private val listAjaLagi: ArrayList<tampilanLagi>): Recyc
         holder.judul.text = judul
         holder.photo.setImageResource(photo)
         holder.poto.setImageResource(poto)
-
     }
 
     override fun getItemCount(): Int = listAjaLagi.size
+
 }
 data class tampilanLagi(
     val judul: String,
