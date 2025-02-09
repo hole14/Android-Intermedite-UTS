@@ -1,12 +1,15 @@
 package com.example.myprojectuts.recycle
 
+import android.content.Intent
 import android.os.Parcelable
+import android.provider.Telephony.Mms.Intents
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myprojectuts.R
+import com.example.myprojectuts.deskripsi.DeskripsiStatus
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.parcelize.Parcelize
 
@@ -40,6 +43,14 @@ class AdapterClass(private val listAja: ArrayList<tampil>): RecyclerView.Adapter
 
         holder.judul.text = judul
         holder.photo.setImageResource(photo)
+
+        holder.itemView.setOnClickListener{
+            pencet.clickItem(listAja[holder.adapterPosition])
+            val intent = Intent(holder.itemView.context, DeskripsiStatus::class.java)
+            intent.putExtra(EXTRA_JUDUL, judul)
+            intent.putExtra(EXTRA_PHOTO, photo)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = listAja.size

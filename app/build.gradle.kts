@@ -47,15 +47,17 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.hdodenhof.circleimageview)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
 
     //implementation tambahan
-    /*implementation(libs.androidx.navigation.ui)
-    implementation(libs.androidx.navigation.fragment)
+    /*
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.viewpager2)
 
     implementation(libs.github.glide)
-    implementation(libs.androidx.navigation.safe.args.gradle.plugin)*/
+    implementation(libs.androidx.navigation.safe.args.gradle.plugin)
+    */
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

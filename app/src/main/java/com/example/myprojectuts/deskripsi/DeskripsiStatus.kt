@@ -1,19 +1,21 @@
 package com.example.myprojectuts.deskripsi
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.widget.EditText
+import android.widget.ImageView
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.example.myprojectuts.R
 
-class DeskripsiStatus : Fragment() {
+class DeskripsiStatus : AppCompatActivity() {
+    private lateinit var share: ImageView
+    private lateinit var pesan: EditText
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.deskripsi_status)
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_deskripsi_status, container, false)
+        val
     }
 }
